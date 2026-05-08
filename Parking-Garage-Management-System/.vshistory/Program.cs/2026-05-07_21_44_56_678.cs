@@ -1,0 +1,23 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Parking_Garage_Management_System
+{
+    internal class Program
+    {
+        public enum VehicleType
+        {
+            Car,
+            Motorcycle,
+            Truck
+        }
+        static void Main(string[] args)
+        {
+            
+
+        }
+    }
+}
