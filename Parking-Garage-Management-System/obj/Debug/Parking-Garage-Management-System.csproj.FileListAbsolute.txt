@@ -1,0 +1,8 @@
+C:\Users\balab\Documents\Console-Projects-CSharp\Parking-Garage-Management-System\bin\Debug\Parking-Garage-Management-System.exe.config
+C:\Users\balab\Documents\Console-Projects-CSharp\Parking-Garage-Management-System\bin\Debug\Parking-Garage-Management-System.exe
+C:\Users\balab\Documents\Console-Projects-CSharp\Parking-Garage-Management-System\bin\Debug\Parking-Garage-Management-System.pdb
+C:\Users\balab\Documents\Console-Projects-CSharp\Parking-Garage-Management-System\obj\Debug\Parking-Garage-Management-System.csproj.AssemblyReference.cache
+C:\Users\balab\Documents\Console-Projects-CSharp\Parking-Garage-Management-System\obj\Debug\Parking-Garage-Management-System.csproj.CoreCompileInputs.cache
+C:\Users\balab\Documents\Console-Projects-CSharp\Parking-Garage-Management-System\obj\Debug\Parking-Garage-Management-System.exe
+C:\Users\balab\Documents\Console-Projects-CSharp\Parking-Garage-Management-System\obj\Debug\Parking-Garage-Management-System.pdb
+C:\Users\balab\Documents\Console-Projects-CSharp\Parking-Garage-Management-System\obj\Debug\Parking-Garage-Management-System.exe.config

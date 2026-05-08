@@ -62,8 +62,6 @@ namespace Parking_Garage_Management_System
                         Console.WriteLine($"=== HIGHEST PARKING FEE === \n {v.OwnerName} - {v.ParkingFee}$");
                     }
                 }
-
-                Console.ReadLine();
             }
             catch (ArgumentOutOfRangeException ex)
             {

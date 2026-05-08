@@ -59,11 +59,9 @@ namespace Parking_Garage_Management_System
                     // find the owner who pays the highest parking fee
                     if (v.ParkingFee > v1.ParkingFee) // placeholder
                     {
-                        Console.WriteLine($"=== HIGHEST PARKING FEE === \n {v.OwnerName} - {v.ParkingFee}$");
+                        Console.WriteLine($"=== HIGHEST PARKING FEE=== \n {v.OwnerName} - {v.ParkingFee}$");
                     }
                 }
-
-                Console.ReadLine();
             }
             catch (ArgumentOutOfRangeException ex)
             {

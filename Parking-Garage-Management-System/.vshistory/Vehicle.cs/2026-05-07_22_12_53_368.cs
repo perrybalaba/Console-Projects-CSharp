@@ -22,9 +22,8 @@ namespace Parking_Garage_Management_System
         private decimal _parkingFee;
 
         // assign variables
-        public uint minHours = 1, maxHours = 24, promotionHours = 5;
-        public decimal carFee = 4, motorcycleFee = 2, truckFee = 6, discount = 15, percent = 100;
-        string status;
+        uint minHours = 1, maxHours = 24;
+        decimal carFee = 4, motorcycleFee = 2, truckFee = 6;
 
         // property - license plate
         public string LicensePlate
@@ -46,19 +45,16 @@ namespace Parking_Garage_Management_System
             get { return _vehicleType; }
             set
             {
-                bool found = false;
-
-                foreach (Enum vehicle in Enum.GetValues(typeof(TheVehicleType)))
+                foreach (string vehicle in Enum.GetValues(typeof(TheVehicleType)))
                 {
-                    if (vehicle.ToString() == value) // if value equals to one of the vehicles in the enum
+                    if (vehicle.Equals(value)) // if value equals to one of the vehicles in the enum
                     {
-                        _vehicleType = vehicle.ToString();
-                        found = true;
+                        _vehicleType = vehicle;
                     }
-                }
-                if (!found)
-                {
-                    throw new ArgumentException($"Error! This vehicle type {value} is not part of our system");
+                    else
+                    {
+                        throw new ArgumentException($"Error! This vehicle type {value} is not part of our system");
+                    }
                 }
             }
         }
@@ -103,41 +99,12 @@ namespace Parking_Garage_Management_System
             HoursParked = hoursParked_;
         }
 
-        // method - calculate parking fee
         public void CalculateParkingFee()
         {
             if (_vehicleType == "Car")
             {
-                _parkingFee = _hoursParked * carFee;
+                _parkingFee = 
             }
-            else if (_vehicleType == "Motorcycle")
-            {
-                _parkingFee = _hoursParked * motorcycleFee;
-            }
-            else
-            {
-                _parkingFee = _hoursParked * truckFee;
-            }
-        }
-
-        // method - applies special promotion
-        public void ApplySpecialPromotion()
-        {
-            if (_hoursParked % promotionHours == 0)
-            {
-                status = "YES";
-                _parkingFee -= ((_parkingFee * discount) / percent);
-            }
-            else
-            {
-                status = "NO";
-            }
-        }
-
-        // method - display vehicle info
-        public void DisplayVehicleInfo()
-        {
-            Console.WriteLine($"License Plate: {_licensePlate} \nOwner: {_ownerName} \nVehicle Type: {_vehicleType} \nHours Parked: {_hoursParked} \nPromotion Applied: {status} \nTotal Fee: {_parkingFee}$");
         }
 
     }

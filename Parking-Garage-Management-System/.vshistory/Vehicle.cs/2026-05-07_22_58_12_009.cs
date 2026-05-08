@@ -23,7 +23,7 @@ namespace Parking_Garage_Management_System
 
         // assign variables
         public uint minHours = 1, maxHours = 24, promotionHours = 5;
-        public decimal carFee = 4, motorcycleFee = 2, truckFee = 6, discount = 15, percent = 100;
+        public decimal carFee = 4, motorcycleFee = 2, truckFee = 6, discount = 15;
         string status;
 
         // property - license plate
@@ -126,12 +126,10 @@ namespace Parking_Garage_Management_System
             if (_hoursParked % promotionHours == 0)
             {
                 status = "YES";
-                _parkingFee -= ((_parkingFee * discount) / percent);
+                _parkingFee -= (_parkingFee * discount);
             }
-            else
-            {
-                status = "NO";
-            }
+
+            status = "NO";
         }
 
         // method - display vehicle info
