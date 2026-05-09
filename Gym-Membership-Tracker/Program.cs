@@ -10,6 +10,7 @@ namespace Gym_Membership_Tracker
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
