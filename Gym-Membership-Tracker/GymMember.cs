@@ -21,8 +21,9 @@ namespace Gym_Membership_Tracker
         private decimal _monthlyFee;
 
         // assigning variables
-        byte minAge = 16, maxAge = 65, maxVisits = 60, rewardVisits = 10;
+        byte minAge = 16, maxAge = 65, minVisits = 20, maxVisits = 60, rewardVisits = 10;
         decimal basicFee = 25, premiumFee = 45, vipFee = 80;
+        string reward, status;
 
         // property - member name
         public string MemberName
@@ -124,11 +125,8 @@ namespace Gym_Membership_Tracker
         }
 
         // method - check reward eligibility
-        public string CheckRewardEligibility()
+        public void CheckRewardEligibility()
         {
-            // declare string
-            string reward; 
-
             if (_visits % rewardVisits == 0)
             {
                 reward = $"Free Protein Shake";
@@ -137,8 +135,19 @@ namespace Gym_Membership_Tracker
             {
                 reward = "None";
             }
+        }
 
-            return reward;
+        // method - determine activity status
+        public void DetermineActivityStatus()
+        {
+            if (_visits > minVisits )
+            {
+                status = "Active";
+            }
+            else
+            {
+                status = "Inactive";
+            }
         }
 
 
