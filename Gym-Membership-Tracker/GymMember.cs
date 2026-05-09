@@ -19,5 +19,12 @@ namespace Gym_Membership_Tracker
         private string _memberName, _membershipType;
         private byte _age, _monthlyVisits;
         private decimal _monthlyFee;
+
+        // property - member name
+        public string MemberName
+        {
+            get { return _memberName; }
+            set { _memberName = value; }
+        }
     }
 }
