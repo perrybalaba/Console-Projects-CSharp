@@ -20,6 +20,9 @@ namespace Gym_Membership_Tracker
         private byte _age, _monthlyVisits;
         private decimal _monthlyFee;
 
+        // assigning variables
+        byte minAge = 16, maxAge = 65;
+
         // property - member name
         public string MemberName
         {
@@ -33,5 +36,22 @@ namespace Gym_Membership_Tracker
             get { return _membershipType; }
             set { _membershipType = value; }
         }
+
+        // property - age
+        public byte Age
+        {
+            get { return _age; }
+            set
+            {
+                if (value < minAge ||  value > maxAge)
+                {
+                    throw new ArgumentOutOfRangeException($"Error! The member's age must be in between {minAge} to {maxAge} (inclusive).");
+                }
+
+                _age = value;
+            }
+        }
+
+        
     }
 }
