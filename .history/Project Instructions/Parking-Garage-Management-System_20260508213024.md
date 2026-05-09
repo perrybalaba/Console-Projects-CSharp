@@ -154,7 +154,5 @@ Highest Parking Fee:
 Mike Brown - $72
 ```
 
-## My Code to the Project
-### Parking Garage Management System
-[C# (Class)](../Parking-Garage-Management-System/Vehicle.cs) |
-[C# (Main)](../Parking-Garage-Management-System/Program.cs)
+## My Code
+[My Parking Garage Management System in C#](./Parking-Garage-Management-System/Parking-Garage-Management-System.sln)

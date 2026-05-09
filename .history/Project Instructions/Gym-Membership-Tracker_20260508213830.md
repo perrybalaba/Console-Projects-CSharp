@@ -41,7 +41,7 @@ enum MembershipType
 - MemberName
 - Age
 - MembershipType
-- Visits
+- MonthlyVisits
 - MonthlyFee
 
 **Constraints:**
@@ -142,8 +142,3 @@ Total VIP Members: 1
 Most Active Member:
 Jason Miller with 30 visits
 ```
-
-## My Code to the Project
-### Gym Membership Tracker
-[C# (Class)](../Gym-Membership-Tracker/GymMember.cs) |
-[C# (Main)](../Gym-Membership-Tracker/Program.cs)
