@@ -158,8 +158,5 @@ namespace Gym_Membership_Tracker
         {
             return $"Member: {_memberName} \nAge: {_age} \nMembership: {_membershipType} \nMonthly Fee: {_monthlyFee}$ \nVisits: {_visits} \nReward Earned: {reward} \nStatus: {status}";
         }
-
-
-        
     }
 }
