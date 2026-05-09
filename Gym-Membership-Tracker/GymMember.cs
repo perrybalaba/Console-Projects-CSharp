@@ -67,6 +67,28 @@ namespace Gym_Membership_Tracker
             }
         }
 
+        // property - monthly fee
+        public decimal MonthlyFee
+        {
+            get { return _monthlyFee; }
+        }
+
+        // default constructor
+        public GymMember()
+        {
+            _memberName = string.Empty;
+            _membershipType = string.Empty;
+            _age = 0;
+            _visits = 0;
+            _monthlyFee = 0;
+        }
+
+        // parametized constructors - accepts all backing fields except for monthly fee\
+        public GymMember()
+        {
+
+        }
+
         
     }
 }
