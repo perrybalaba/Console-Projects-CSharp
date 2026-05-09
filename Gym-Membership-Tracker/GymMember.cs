@@ -22,6 +22,7 @@ namespace Gym_Membership_Tracker
 
         // assigning variables
         byte minAge = 16, maxAge = 65, maxVisits = 60;
+        decimal basicFee = 25, premiumFee = 45, vipFee = 80;
 
         // property - member name
         public string MemberName
@@ -108,7 +109,21 @@ namespace Gym_Membership_Tracker
         // method - calculate membership fee
         public void CalculateMembershipFee()
         {
+            if (_membershipType == "Basic")
+            {
+                _monthlyFee = basicFee;
+            }
+            else if (_membershipType == "Premium")
+            {
+                _monthlyFee = premiumFee;
+            }
+            else
+            {
+                _monthlyFee = vipFee;
+            }
         }
+
+
 
         
     }
