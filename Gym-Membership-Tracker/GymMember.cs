@@ -26,5 +26,12 @@ namespace Gym_Membership_Tracker
             get { return _memberName; }
             set { _memberName = value; }
         }
+
+        // property - membership type
+        public string MembershipType
+        {
+            get { return _membershipType; }
+            set { _membershipType = value; }
+        }
     }
 }
