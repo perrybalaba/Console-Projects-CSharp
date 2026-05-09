@@ -40,10 +40,10 @@ namespace Gym_Membership_Tracker
                 }
 
                 // displaying stats
+                Console.WriteLine("=== STATS ===");
+
                 foreach (GymMember m in gList)
                 {
-                    Console.WriteLine("=== STATS ===");
-
                     if (m.MembershipType == "Basic")
                     {
                         Console.WriteLine($"Total Basic Members: {basicCount++}");
@@ -62,6 +62,8 @@ namespace Gym_Membership_Tracker
                         Console.WriteLine($"Most Active Member: {m.MemberName} with {m.Visits} visits");
                     }
                 }
+
+                Console.ReadLine();
             }
             catch (ArgumentOutOfRangeException ex)
             {
