@@ -84,9 +84,12 @@ namespace Gym_Membership_Tracker
         }
 
         // parametized constructors - accepts all backing fields except for monthly fee\
-        public GymMember()
+        public GymMember(string memberName_, string membershipType_, byte age_, byte visits_)
         {
-
+            MemberName = memberName_;
+            MembershipType = membershipType_;
+            Age = age_;
+            Visits = visits_;
         }
 
         
