@@ -143,7 +143,7 @@ namespace Gym_Membership_Tracker
         // method - determine activity status
         public void DetermineActivityStatus()
         {
-            if (_visits > minVisits )
+            if (_visits >= minVisits)
             {
                 status = "Active";
             }
