@@ -150,6 +150,12 @@ namespace Gym_Membership_Tracker
             }
         }
 
+        // method - display member info
+        public string DisplayMemberInfo()
+        {
+            return $"Member: {_memberName} \nAge: {_age} \nMembership: {_membershipType} \nMonthly Fee: {_monthlyFee}$ \nVisits: {_visits} \nReward Earned: {reward} \nStatus: {status}";
+        }
+
 
         
     }
