@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Gym_Membership_Tracker
 {
-    public enum MembershipType
+    public enum TheMembershipType
     {
         Basic,
         Premium,
@@ -15,5 +15,9 @@ namespace Gym_Membership_Tracker
 
     public class GymMember
     {
+        // backing fields
+        private string _memberName, _membershipType;
+        private byte _age, _monthlyVisits;
+        private decimal _monthlyFee;
     }
 }
