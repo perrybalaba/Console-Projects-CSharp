@@ -24,6 +24,7 @@ namespace Gym_Membership_Tracker
         byte minAge = 16, maxAge = 65, minVisits = 20, maxVisits = 60, rewardVisits = 10;
         decimal basicFee = 25, premiumFee = 45, vipFee = 80;
         string reward, status;
+        bool found = false;
 
         // property - member name
         public string MemberName
@@ -43,11 +44,13 @@ namespace Gym_Membership_Tracker
                     if (value == membership.ToString())
                     {
                         _membershipType = membership.ToString();
+                        found = true;
                     }
-                    else
-                    {
-                        throw new Exception($"Error! The only membership types available are: {TheMembershipType.Basic}, {TheMembershipType.Premium}, and {TheMembershipType.VIP}");
-                    }
+                }
+
+                if (!found)
+                {
+                    throw new Exception($"Error! The only membership types available are: {TheMembershipType.Basic}, {TheMembershipType.Premium}, and {TheMembershipType.VIP}");
                 }
             }
         }
