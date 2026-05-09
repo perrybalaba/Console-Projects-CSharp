@@ -34,7 +34,20 @@ namespace Gym_Membership_Tracker
         public string MembershipType
         {
             get { return _membershipType; }
-            set { _membershipType = value; }
+            set 
+            {
+                foreach (Enum membership in Enum.GetValues(typeof(TheMembershipType)))
+                {
+                    if (value == membership.ToString())
+                    {
+                        _membershipType = membership.ToString();
+                    }
+                    else
+                    {
+                        throw new Exception($"Error! The only membership types available are: {TheMembershipType.Basic}, {TheMembershipType.Premium}, and {TheMembershipType.VIP}");
+                    }
+                }
+            }
         }
 
         // property - age
@@ -90,6 +103,11 @@ namespace Gym_Membership_Tracker
             MembershipType = membershipType_;
             Age = age_;
             Visits = visits_;
+        }
+
+        // method - calculate membership fee
+        public void CalculateMembershipFee()
+        {
         }
 
         
