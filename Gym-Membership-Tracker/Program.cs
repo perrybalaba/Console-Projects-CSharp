@@ -10,7 +10,12 @@ namespace Gym_Membership_Tracker
     {
         static void Main(string[] args)
         {
+            // creating objects of gym member class
+            GymMember m1 = new GymMember("Daniel Smith", "Premium", 22, 20);
+            GymMember m2 = new GymMember("Olivia Johnson", "VIP", 31, 17);
+            GymMember m3 = new GymMember("Jason Miller", "Basic", 19, 30);
 
+          
         }
     }
 }
